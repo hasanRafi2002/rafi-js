@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Element Example</title>
+</head>
+<body>
+    <ul id="itemList">
+        <li id="item1">Item 1</li>
+        <li id="item2">Item 2</li>
+        <li id="item3">Item 3</li>
+    </ul>
+
+    <button onclick="removeItem()">Remove Item 2</button>
+
+    <script>
+        function removeItem() {
+            // Get the list and the item
+            var list = document.getElementById("itemList");
+            var item = document.getElementById("item2");
+
+            // Remove the item from the list
+            list.removeChild(item);
+        }
+    </script>
+
+</body>
+</html>

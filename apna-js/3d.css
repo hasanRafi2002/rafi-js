@@ -1,0 +1,24 @@
+#box{
+    background-color: rgb(5, 68, 70);
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+
+.newClass{
+    background-color: red;
+}
+
+
+.dark{
+    background-color: #043140;
+    color: #fff;
+}
+
+.light{
+    background-color: #beeba3;
+    color: #000;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Element Example</title>
+</head>
+<body>
+    <div id="rafi">
+    <div id="container">
+        <p id="paragraph">This is a paragraph that will be removed.</p>
+        <p>This is another paragraph.</p>
+    </div>
+</div>
+
+    <button onclick="removeParagraph()">Remove Paragraph</button>
+
+    <script>
+        function removeParagraph() {
+            // Get the parent element (the div)
+            var rafi = document.getElementById("rafi");
+
+            // Get the child element (the paragraph to be removed)
+            var paragraph = document.getElementById("paragraph");
+
+            // Remove the paragraph from the container
+            rafi.removeChild(paragraph);
+        }
+    </script>
+
+</body>
+</html>

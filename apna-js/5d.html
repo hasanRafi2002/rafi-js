@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Replace Child Example</title>
+</head>
+<body>
+    <div id="content">
+        <p id="oldParagraph">This is the old paragraph.</p>
+    </div>
+
+    <button onclick="replaceParagraph()">Replace Paragraph</button>
+
+    <script>
+        function replaceParagraph() {
+            // Create a new paragraph element
+            var newParagraph = document.createElement("p");
+
+            // Add text content to the new paragraph
+            newParagraph.textContent = "This is the new paragraph.";
+
+            // Get the parent element (the div)
+            var contentDiv = document.getElementById("content");
+
+            // Get the old paragraph to be replaced
+            var oldParagraph = document.getElementById("oldParagraph");
+
+            // Replace the old paragraph with the new one
+            contentDiv.replaceChild(newParagraph, oldParagraph);
+        }
+    </script>
+
+</body>
+</html>

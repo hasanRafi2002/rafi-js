@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Append Child Example</title>
+</head>
+<body>
+    <div id="content">
+        <p>This is an existing paragraph.</p>
+    </div>
+
+    <button onclick="addParagraph()">Add Paragraph</button>
+
+    <script>
+        function addParagraph() {
+            // Create a new paragraph element
+            var newParagraph = document.createElement("p");
+
+            // Add text content to the new paragraph
+            newParagraph.textContent = "This is a newly appended paragraph!";
+
+            // Get the parent element (the div)
+            var contentDiv = document.getElementById("content");
+
+            // Append the new paragraph to the div
+            contentDiv.appendChild(newParagraph);
+        }
+    </script>
+
+</body>
+</html>
